@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec5598e131.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/veehlogo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nails</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="jiji/handfrenchtips.jpg" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="jiji/nailkit.jpg">
+                    <div>
+                        <h1>Nail Kit</h1>
+                        <p>For easy prep</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="jiji/blackabstract.jpg">
+                    <div>
+                        <h1>Set of 10</h1>
+                        <p>For perfect fit</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="jiji/pinkabstract.jpg">
+                    <div>
+                        <h1>Set of 20</h1>
+                        <p>Extra pieces for flexibility</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/pressonswithtab.png">
+                    <div>
+                        <h1>Instructions</h1>
+                        <p>Visual set of instructions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="media/arrowup.png" id="upbtn">
+            <h3>Features</h3>
+            <img src="media/arrowup.png" id="downbtn">
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+        downbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
